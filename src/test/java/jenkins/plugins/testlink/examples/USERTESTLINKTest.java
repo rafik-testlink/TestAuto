@@ -39,13 +39,13 @@ public class USERTESTLINKTest {
   }
   @Test
   public void uSERTESTLINK() {
-    driver.get("http://127.0.0.1/testlink/login.php?note=logout&viewer=");
+    driver.get("http://172.16.4.13/testlink/login.php?note=logout&viewer=");
     driver.manage().window().setSize(new Dimension(1272, 676));
     driver.findElement(By.id("tl_login")).click();
-    driver.findElement(By.id("tl_login")).sendKeys("Testeur_2");
+    driver.findElement(By.id("tl_login")).sendKeys("Rafik");
     driver.findElement(By.id("tl_login")).click();
     driver.findElement(By.id("tl_password")).click();
-    driver.findElement(By.id("tl_password")).sendKeys("123456");
+    driver.findElement(By.id("tl_password")).sendKeys("499084");
     driver.findElement(By.cssSelector(".form__field:nth-child(7) > input")).click();
   }
 }
